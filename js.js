@@ -16,9 +16,19 @@
 //console.log(`welcome ${a}`);
 
 
-//ARRAY DESTRUCTURING
-const arr = ["a","abs","min"]
-console.log(arr[0]);
-const [a,b,c] = arr;
-console.log(a);
-console.log(b);
+// //ARRAY DESTRUCTURING
+// const arr = ["a","abs","min"]
+// console.log(arr[0]);
+// const [a,b,c] = arr;
+// console.log(a);
+// console.log(b);
+
+//OBJECT DESTRUCTURING
+const stud = {
+    name: "dhivya",
+    age:21
+}
+
+const{name,age} = stud;
+console.log(name)
+console.log(age)
