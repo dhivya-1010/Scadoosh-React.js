@@ -24,11 +24,39 @@
 // console.log(b);
 
 //OBJECT DESTRUCTURING
+// const stud = {
+//     name: "dhivya",
+//     age:21
+// }
+
+// const{name,age} = stud;
+// console.log(name)
+// console.log(age)
+
+// //node - runtime environment of javascript
+
+//SPREAD OPERATOR
+//1.ARRAYS
+const a = [1,2,3]
+const b = [...a]
+console.log(b)
+
+const a = [1,2,3]
+const b = [4,5,6]
+const c = [...a,...b]
+console.log(c)
+
+
+//SPREAD OPERATOR
+//2. OBJECT
 const stud = {
-    name: "dhivya",
-    age:21
+    "name":"Dhivya",
+    "age":21
 }
 
-const{name,age} = stud;
-console.log(name)
-console.log(age)
+const s1 = {
+    ...stud,
+    "city":"cbe"
+}
+
+console.log(s1)
