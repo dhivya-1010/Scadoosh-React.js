@@ -1,11 +1,16 @@
 // let a = 10;
 // console.log(a);
 
-const a = 10;
-const b = 20;
+// const a = 10;
+// const b = 20;
 
-const add = (a,b)=>{
-    console.log(a+b);
-};
+// const add = (a,b)=>{
+//     console.log(a+b);
+// };
 
-add(a,b);
+// add(a,b);
+
+//TEMPLATE LITERALS
+let a = "Dhivya";
+//console.log("welcome " + a);
+console.log(`welcome ${a}`);
