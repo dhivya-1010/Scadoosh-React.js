@@ -69,15 +69,20 @@
 // add(1,2,3,4,5,7)
 
 //MAP
+// const a = [1,2,3,4,5]
+
+// //map
+// const r=a.map(n=>n*2)
+// console.log(r)
+
+
+// //normal fn
+// function add(n){
+//     return n*2;
+// };
+
+//FILTER
 const a = [1,2,3,4,5]
-
-//map
-const r=a.map(n=>n*2)
-console.log(r)
-
-
-//normal fn
-function add(n){
-    return n*2;
-};
+const b = a.filter((n)=>n%2==0)
+console.log(b)
 
