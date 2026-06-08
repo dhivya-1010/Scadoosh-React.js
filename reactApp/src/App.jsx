@@ -7,7 +7,7 @@ function App() {
   
   return (
     <div>
-      <Student title="Dhivya" />
+      <Student title="Dhivya" course="java" duration={12}/>
       <StudentClass />
       <Students title="Props class"/>
       <Students />
