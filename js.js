@@ -93,7 +93,10 @@
 // })
 
 //FIND
-const a = [1,2,3,4]
-const b = a.find((n)=> n%2==0)
-console.log(b)
+// const a = [1,2,3,4]
+// const b = a.find((n)=> n%2==0)
+// console.log(b)
 
+//TERNARY OPERATOR
+let a = 19
+console.log((a>18)?"You can vote":"You cant vote")
