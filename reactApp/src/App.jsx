@@ -3,6 +3,9 @@ import Student from './assets/component/student'
 import StudentClass from './assets/component/studentclass'
 import Students from './assets/component/student1'
 import Jsxx from './assets/jsxconcept/jsx'
+import StateExample from './assets/jsxconcept/stateexamples'
+import Toggle from './assets/jsxconcept/toggle'
+import TestPass from './assets/jsxconcept/testpassword'
 function App() {
   
   return (
@@ -12,6 +15,9 @@ function App() {
       <Students title="Props class"/>
       <Students />
       <Jsxx />
+      <StateExample />
+      <Toggle />
+      <TestPass />
     </div>
   )
 }
