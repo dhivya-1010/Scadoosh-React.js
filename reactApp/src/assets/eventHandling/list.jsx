@@ -7,7 +7,7 @@ export default function list(){
              <ul>
                 {
                     arr.map((item,idx)=>{
-                        return <li> {item}</li>
+                        return <li key={idx}> {item}</li>
                     })
                 }
              </ul>
