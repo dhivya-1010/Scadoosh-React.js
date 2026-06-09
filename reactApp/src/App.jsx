@@ -12,6 +12,7 @@ import Dice from './assets/jsxconcept/dice'
 import Event from './assets/eventHandling/eventhandling'
 import Handle from './assets/eventHandling/eventtarget'
 import Form from './assets/eventHandling/formsubmit'
+import List from './assets/eventHandling/list'
 
 function App() {
   
@@ -31,6 +32,7 @@ function App() {
       <Event />
       <Handle />
       <Form />
+      <List />
       
     </div>
   )
