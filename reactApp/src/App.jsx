@@ -12,11 +12,14 @@ import Dice from './assets/jsxconcept/dice'
 import Event from './assets/eventHandling/eventhandling'
 import Handle from './assets/eventHandling/eventtarget'
 import Form from './assets/eventHandling/formsubmit'
+import List from './assets/eventHandling/list'
+import ToDo from './assets/component/toDoList/todolist'
 
 function App() {
   
   return (
     <div>
+      <ToDo />
       <Student title="Dhivya" course="java" duration={12}/>
       <StudentClass />
       <Students title="Props class"/>
@@ -31,6 +34,7 @@ function App() {
       <Event />
       <Handle />
       <Form />
+      <List />
       
     </div>
   )
