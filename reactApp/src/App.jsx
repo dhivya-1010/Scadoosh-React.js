@@ -11,6 +11,7 @@ import Change from './assets/jsxconcept/change'
 import Dice from './assets/jsxconcept/dice'
 import Event from './assets/eventHandling/eventhandling'
 import Handle from './assets/eventHandling/eventtarget'
+import Form from './assets/eventHandling/formsubmit'
 
 function App() {
   
@@ -29,6 +30,8 @@ function App() {
       <Dice />
       <Event />
       <Handle />
+      <Form />
+      
     </div>
   )
 }
