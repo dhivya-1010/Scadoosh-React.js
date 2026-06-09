@@ -7,6 +7,7 @@ import StateExample from './assets/jsxconcept/stateexamples'
 import Toggle from './assets/jsxconcept/toggle'
 import TestPass from './assets/jsxconcept/testpassword'
 import Dark from './assets/jsxconcept/dark'
+import Change from './assets/jsxconcept/change'
 function App() {
   
   return (
@@ -20,6 +21,7 @@ function App() {
       <Toggle />
       <TestPass />
       <Dark />
+      <Change />
     </div>
   )
 }
