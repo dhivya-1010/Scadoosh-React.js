@@ -8,6 +8,7 @@ import Toggle from './assets/jsxconcept/toggle'
 import TestPass from './assets/jsxconcept/testpassword'
 import Dark from './assets/jsxconcept/dark'
 import Change from './assets/jsxconcept/change'
+import Dice from './assets/jsxconcept/dice'
 function App() {
   
   return (
@@ -22,6 +23,7 @@ function App() {
       <TestPass />
       <Dark />
       <Change />
+      <Dice />
     </div>
   )
 }
