@@ -1,6 +1,7 @@
 export default function formsubmit(){
 
     function handle(){
+        event.preventDefault();
         alert("form submitted")
     }
 
