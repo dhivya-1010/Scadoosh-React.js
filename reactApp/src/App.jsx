@@ -9,6 +9,9 @@ import TestPass from './assets/jsxconcept/testpassword'
 import Dark from './assets/jsxconcept/dark'
 import Change from './assets/jsxconcept/change'
 import Dice from './assets/jsxconcept/dice'
+import Event from './assets/eventHandling/eventhandling'
+import Handle from './assets/eventHandling/eventtarget'
+
 function App() {
   
   return (
@@ -24,6 +27,8 @@ function App() {
       <Dark />
       <Change />
       <Dice />
+      <Event />
+      <Handle />
     </div>
   )
 }
