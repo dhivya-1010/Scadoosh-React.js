@@ -4,6 +4,7 @@ import StudentClass from './assets/component/studentclass'
 import Students from './assets/component/student1'
 import Jsxx from './assets/jsxconcept/jsx'
 import StateExample from './assets/jsxconcept/stateexamples'
+import Toggle from './assets/jsxconcept/toggle'
 function App() {
   
   return (
@@ -14,6 +15,7 @@ function App() {
       <Students />
       <Jsxx />
       <StateExample />
+      <Toggle />
     </div>
   )
 }
