@@ -37,6 +37,11 @@ export default function Todo() {
         setTodos(updatedTodos);
     }
 
+    function deleteTask(idx){
+        const updatedTodos = todos.filter(( _ ,i) => i!==idx);
+        
+        setTodos(updatedTodos)
+    }
     return (
         <div>
             <h1>To Do List</h1>
@@ -64,12 +69,12 @@ export default function Todo() {
                             checked={item.completed}
                             onChange={() => toggleChange(idx)}
                         />
-
                         {item.completed ? (
                             <s>{item.text}</s>
                         ) : (
                             item.text
                         )}
+                        <button key = {idx} onClick={()=>deleteTask(idx)}> Delete </button>
                     </li>
                 ))}
             </ul>
