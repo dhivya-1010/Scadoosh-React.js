@@ -81,3 +81,5 @@ export default function Todo() {
         </div>
     );
 }
+
+//rerendering - the component will be running again and again every time
