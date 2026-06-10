@@ -1,22 +1,47 @@
 import { useState } from "react";
 
 export default function Todo() {
-    const [task, settask] = useState("");
-    const [todo, settodo] = useState([]);
-
-    function handleToDo(value) {
-        settask(value);
-    }
+    const [task, setTask] = useState("");
+    const [todos, setTodos] = useState([]);
+    const [count, setCount] = useState(0);
 
     function handleTask(e) {
         e.preventDefault();
 
-        // if (task.trim() === "") return;
+        if (task.trim() === "") return;
 
-        settodo([...todo, task]);
-        settask("");
+        setTodos([
+            ...todos,
+            {
+                text: task,
+                completed: false
+            }
+        ]);
+
+        setCount(count + 1);
+        setTask("");
     }
 
+    function toggleChange(idx) {
+        const updatedTodos = [...todos];
+
+        if (updatedTodos[idx].completed) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+
+        updatedTodos[idx].completed =
+            !updatedTodos[idx].completed;
+
+        setTodos(updatedTodos);
+    }
+
+    function deleteTask(idx){
+        const updatedTodos = todos.filter(( _ ,i) => i!==idx);
+        
+        setTodos(updatedTodos)
+    }
     return (
         <div>
             <h1>To Do List</h1>
@@ -26,7 +51,7 @@ export default function Todo() {
                     type="text"
                     placeholder="Enter task"
                     value={task}
-                    onChange={(e) => handleToDo(e.target.value)}
+                    onChange={(e) => setTask(e.target.value)}
                 />
 
                 <button type="submit">
@@ -34,9 +59,23 @@ export default function Todo() {
                 </button>
             </form>
 
+            <h2>Pending Tasks: {count}</h2>
+
             <ul>
-                {todo.map((item, idx) => (
-                    <li key={idx}>{item}</li>
+                {todos.map((item, idx) => (
+                    <li key={idx}>
+                        <input
+                            type="checkbox"
+                            checked={item.completed}
+                            onChange={() => toggleChange(idx)}
+                        />
+                        {item.completed ? (
+                            <s>{item.text}</s>
+                        ) : (
+                            item.text
+                        )}
+                        <button key = {idx} onClick={()=>deleteTask(idx)}> Delete </button>
+                    </li>
                 ))}
             </ul>
         </div>
