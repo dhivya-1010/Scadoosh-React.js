@@ -15,14 +15,16 @@ import Form from './assets/eventHandling/formsubmit'
 import List from './assets/eventHandling/list'
 import ToDo from './assets/component/toDoList/todolist'
 import UseState from './assets/hooks/useStateExample'
+import UseRef from './assets/hooks/userefexample'
 
 function App() {
   
   return (
     <div>
-      <ToDo />
+      {/* <ToDo /> */}
       <UseState />
-      <Student title="Dhivya" course="java" duration={12}/>
+      <UseRef />
+      {/* <Student title="Dhivya" course="java" duration={12}/>
       <StudentClass />
       <Students title="Props class"/>
       <Students />
@@ -36,7 +38,7 @@ function App() {
       <Event />
       <Handle />
       <Form />
-      <List />
+      <List /> */}
       
     </div>
   )
