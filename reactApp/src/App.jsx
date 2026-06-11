@@ -16,14 +16,16 @@ import List from './assets/eventHandling/list'
 import ToDo from './assets/component/toDoList/todolist'
 import UseState from './assets/hooks/useStateExample'
 import UseRef from './assets/hooks/userefexample'
+import BasicProp from './assets/hooks/basicprop'
 
 function App() {
   
   return (
     <div>
       {/* <ToDo /> */}
-      <UseState />
-      <UseRef />
+      {/* <UseState /> */}
+      {/* <UseRef /> */}
+      <BasicProp name="Dhivya" />
       {/* <Student title="Dhivya" course="java" duration={12}/>
       <StudentClass />
       <Students title="Props class"/>
