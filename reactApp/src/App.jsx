@@ -17,6 +17,9 @@ import ToDo from './assets/component/toDoList/todolist'
 import UseState from './assets/hooks/useStateExample'
 import UseRef from './assets/hooks/userefexample'
 import BasicProp from './assets/hooks/basicprop'
+import Navbar from './assets/propdrilling/navbar'
+import Profile from './assets/propdrilling/profile'
+import UserInfo from './assets/propdrilling/userinfo'
 
 function App() {
   
@@ -25,7 +28,10 @@ function App() {
       {/* <ToDo /> */}
       {/* <UseState /> */}
       {/* <UseRef /> */}
-      <BasicProp name="Dhivya" />
+      {/* <BasicProp name="Dhivya" /> */}
+      <Navbar name="dhivya"/>
+      {/* <Profile />
+      <UserInfo /> */}
       {/* <Student title="Dhivya" course="java" duration={12}/>
       <StudentClass />
       <Students title="Props class"/>
